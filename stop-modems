@@ -8,7 +8,7 @@ LOGO=$MYPATH/pmlogo.png
 
 #stop all modems that might be running
 
-sudo killall direwolf ardopc kissattach piARDOP_GUI rigctld > /dev/null 2>&1
+sudo killall direwolf ardopc kissattach ARDOP_GUI rigctld > /dev/null 2>&1
 sudo rfcomm release /dev/rfcomm0 > /dev/null 2>&1
 VARA=$(ps aux | grep wine | grep VARA | head -1 | awk '{print $2}')
 kill -9 $VARA > /dev/null 2>&1
