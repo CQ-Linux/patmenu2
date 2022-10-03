@@ -52,12 +52,12 @@ else
 sudo killall direwolf kissattach
 fi
 
-PIARDOPC=$(pidof piardopc)
+PIARDOPC=$(pidof ardopc)
 if [ -z "$PIARDOPC" ]
 then
 echo
 else
-sudo killall piardopc ardop-GUI
+sudo killall ardopc ardop-GUI
 fi
 
 fi
@@ -189,7 +189,7 @@ fi
 
 if [ $AMRRON = "no" ]
 then
-#start ardop-gui & piardopc
+#start ardop-gui & ardopc
 $ARDOPGUI &						
 $ARDOP &						
 sleep 10						
@@ -212,7 +212,7 @@ yad --title="SUCCESS" --width=300 --height=100 \
 
 if [ $AMRRON = "no" ]
 then
-sudo killall piardopc piARDOP_GUI
+sudo killall ardopc piARDOP_GUI
 fi
 exit 0
 fi
@@ -252,7 +252,7 @@ rm -rf $HOME/tempardop
 if [ $AMRRON = "no" ]
 then
 #Stop ARDOP modem and gui
-sudo killall piardopc piARDOP_GUI
+sudo killall ardopc piARDOP_GUI
 fi
 
 yad --title="NO Connection" --width=400 --height=100 \

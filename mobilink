@@ -21,7 +21,7 @@ LOGO=$MYPATH/pmlogo.png
 clear
 KISS=$(pidof kissattach)
 DIRE=$(pidof direwolf)
-ARDOP=$(pidof piardopc)
+ARDOP=$(pidof ardopc)
 TMPFILE=/run/user/$UID/scan.txt
 EXISTING=`bluetoothctl paired-devices | grep Mobilinkd`
 

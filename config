@@ -5,10 +5,10 @@
 MYCALLSIGN=N0CALL
 
 #command to start ARDOP modem
-ARDOP="$HOME/ardop/./piardopc 8515 plughw:1,0 plughw:1,0"
+ARDOP="$HOME/ardop/./ardopc 8515 plughw:1,0 plughw:1,0"
 
 #Path to ardop-gui if installed
-ARDOPGUI=$HOME/ardop/./piARDOP_GUI
+ARDOPGUI=$HOME/ardop/./ARDOP_GUI
 
 #command to start direwolf
 DIREWOLF="direwolf -p"

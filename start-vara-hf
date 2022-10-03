@@ -42,8 +42,8 @@ MODEMCHECK=$(ps aux | grep -i box86 | grep -i varafm)
 	exit
 	fi
 
-#check if piardopc is running
-PIDDW=$(pidof piardopc)
+#check if ardopc is running
+PIDDW=$(pidof ardopc)
 	if [ ! -z "$PIDDW" ]; then
 	yad --title="FAILED" --width=400 --height=100 \
 	--image $LOGO --window-icon=$LOGO --image-on-top --text-align=center \

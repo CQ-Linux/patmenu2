@@ -10,7 +10,7 @@ MYPATH=$HOME/patmenu2
 LOGO=$MYPATH/pmlogo.png
 KISS=$(pidof kissattach)
 DIRE=$(pidof direwolf)
-ARDOP=$(pidof piardopc)
+ARDOP=$(pidof ardopc)
 MOBIUSB=$(ls -l /dev/serial/by-id | grep Mobilinkd | awk '{print $NF}' | sed 's/.*tty/tty/')
 
 #verify mobilinkd is plugged in and detected

@@ -44,8 +44,8 @@ fi
 if [ $AMRRON = "no" ] > /dev/null 2>&1
 then
 
-#check if piardopc is running
-PIDDW=$(pidof piardopc)
+#check if ardopc is running
+PIDDW=$(pidof ardopc)
 if [ -z "$PIDDW" ]
 then
 echo
